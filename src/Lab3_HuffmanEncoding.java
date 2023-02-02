@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Lab3_HuffmanEncoding {
+public class HuffmanEncoding {
 	
 	/**
      *  Main entry point for the program.
@@ -35,7 +35,7 @@ public class Lab3_HuffmanEncoding {
         
         //  Check for command line arguments.
         if (args.length != 7) {
-            System.out.println("Usage:  java Lab3 [frequency taable file pathname]" +
+            System.out.println("Usage:  java [frequency taable file pathname]" +
                 " [cipher code file path name] [preorder traversal file pathname] [encoded messages file pathanme] "
                 + "[encoded message from clear text file path name] [clearText file pathname]"
                 + "[decoded messages (from encoded file) file pathname]");
@@ -75,19 +75,19 @@ public class Lab3_HuffmanEncoding {
         HuffmanTree tree = new HuffmanTree(queue);
         root = tree.makeTree();
         String code = "";
-        String outputText = "Tim Jarvis - Lab 3 \n\nHuffman Tree Code Cipher:\n";
+        String outputText = "\n\nHuffman Tree Code Cipher:\n";
         writeResult(outputText, cipher);
         generateCipher(root, code, cipher);
         
         
         // preOrder prints preOrder traversal to file
-        String preOrderText = "Tim Jarvis - Lab 3 \n\nHuffman Tree PreOrder Traversal:\n";
+        String preOrderText = "\n\nHuffman Tree PreOrder Traversal:\n";
         writeResult(preOrderText, preorder);
         preOrder(root, preorder);
         
         
         // Decodes encoded message and writes decoded message to file
-        String decodedText = "Tim Jarvis - Lab 3 \n\nHuffman Tree Encoded.txt file Decoded Messages:\n";
+        String decodedText = "\n\nHuffman Tree Encoded.txt file Decoded Messages:\n";
         writeResult(decodedText, encodedMessages);
         encodedLine = readFile(encoded);
         
@@ -120,7 +120,7 @@ public class Lab3_HuffmanEncoding {
         }
         
         // Decodes encoded message and writes decoded message to file
-        String encodedText = "Tim Jarvis - Lab 3 \n\nHuffman Tree ClearText.txt file Encoded Messages:\n";
+        String encodedText = "\n\nHuffman Tree ClearText.txt file Encoded Messages:\n";
         writeResult(encodedText, decodedMessages);
         messageText = readFile(clearText);
         
@@ -196,9 +196,7 @@ public class Lab3_HuffmanEncoding {
         preOrder(root.right, output);
     }
 
-	 /**
-     *  Adapted from JH Data Structures - Project 0
-     * 
+	 /**     * 
      *  Reads the next expression from the input file.
      *  @param  input A buffered stream from a file that contain
      *                 one prefix expression per line.
@@ -220,8 +218,7 @@ public class Lab3_HuffmanEncoding {
     
     
     /**
-     *  Adapted from JH Data Structures - Project 0
-     * 
+     *   
      *  Write a string to the output stream.
      *  @param text   The text to write.
      *  @param output The output stream to write the text to.

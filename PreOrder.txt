@@ -1,5 +1,3 @@
-Tim Jarvis - Lab 3 
-
 Huffman Tree PreOrder Traversal:
 
 ABCDEFGHIJKLMNOPQRSTUVWXYZ : 413
