@@ -2,7 +2,7 @@
 Compile the program by:
 1) navigating to folder where input file and .java files are located via the command prompt
 2) running the following:
-	"javac Lab3_HuffmanEncoding.java" to compile the code
+	"javac HuffmanEncoding.java" to compile the code
 
 Run the program by:
 7 command line arguements are required
