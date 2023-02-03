@@ -9,7 +9,7 @@ Run the program by:
 
 1) navigating to folder where input file and .java files are located via the command prompt
 2) running the following:
-	"java Lab3_HuffmanEncoding.java "FreqTable.txt" "Cipher.txt" "PreOrder.txt" "Encoded.txt" "DecodedMessages.txt" "ClearText.txt" "EncodedMessage.txt"  
+	"java HuffmanEncoding.java "FreqTable.txt" "Cipher.txt" "PreOrder.txt" "Encoded.txt" "DecodedMessages.txt" "ClearText.txt" "EncodedMessage.txt"  
 
 
 FreqTable.txt - Input Frequency Table
